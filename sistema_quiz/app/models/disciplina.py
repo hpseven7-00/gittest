@@ -17,4 +17,6 @@ class Disciplina(db.Model):
             "nome": self.nome,
             "descricao": self.descricao,
         }
+    def __repr__(self):
+        return f"<Disciplina {self.nome}>"
 
